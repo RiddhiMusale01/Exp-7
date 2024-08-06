@@ -1,4 +1,26 @@
-# Exp-7
+# Experiment 7
+
+AIM:
+
+To study and implement C++ Arrays and Strings.
+
+SOFTARE: Visual Studio Code
+
+THEORY:
+
+Arrays in C++ are collections of elements of the same type stored in contiguous memory locations. They provide a way to group multiple values under a single variable name, which can be accessed using an index.
+
+An array is declared by specifying the type of its elements followed by square brackets [] and the size of the array. For example, int numbers[5]; declares an array of 5 integers.
+
+Elements of an array are accessed using indices, with the first element having an index of 0. For instance, numbers[0] refers to the first element.
+
+C++ supports multidimensional arrays, such as 2D arrays, declared with multiple sets of square brackets. For example, 
+int matrix[3][4]; declares a 3x4 matrix.
+
+CODES:
+
+1) Declaring Arrays
+
 ```
 #include <iostream>
 using namespace std;
@@ -23,6 +45,8 @@ int main() {
 O/P:
 
 ![image](https://github.com/user-attachments/assets/24629bbf-5dc4-490d-83df-9226e74d4c80)
+
+2) Creating input and output.
 
 ```
 #include <iostream>
@@ -52,6 +76,8 @@ int main() {
 O/P:
 
 ![image](https://github.com/user-attachments/assets/0b8edcf6-02a9-4951-b8cc-70fb9bea29e4)
+
+3) Reversing Arrays.
 
 ```
 #include <iostream>
@@ -90,6 +116,8 @@ O/P:
 
 ![image](https://github.com/user-attachments/assets/1d6539a9-4c0f-4081-8047-d5c69618da9f)
 
+4) Searching elements in an array.
+
 ```
 #include<iostream>
 using namespace std;
@@ -119,6 +147,9 @@ int main() {
 O/P:
 
 ![image](https://github.com/user-attachments/assets/3c4448a4-9ec5-4586-b14c-0dbbc92508e1)
+
+5) Sum and average of an array.
+   a. Using range-based for loops.
 
 ```
 #include <iostream>
@@ -152,6 +183,8 @@ O/P:
 
 
 ![image](https://github.com/user-attachments/assets/962248b3-9098-442f-925a-ece00a25e054)
+
+b. Using simple for loops.
 
 ```
 #include <iostream>
@@ -187,6 +220,8 @@ int main() {
 O/P:
 
 ![image](https://github.com/user-attachments/assets/1ee17178-b01d-485c-82d6-3f9bece4b4e5)
+
+6) Maximum and Minimum element of an array.
 ```
 #include <iostream>
 using namespace std;
@@ -225,6 +260,9 @@ O/P:
 
 ![image](https://github.com/user-attachments/assets/eba21505-9465-4504-aa04-8dfb2c6cdd86)
 
+CONCLUSION:
+
+These code snippets show basic operations with arrays in C++. They include printing array elements, taking user input to fill arrays, reversing the order of elements, searching for specific values, and calculating sums and averages. The examples use different types of loops and handle both fixed and user-defined array sizes. Overall, they provide a straightforward introduction to working with arrays and performing common tasks like finding maximum and minimum values.
 
 
 
