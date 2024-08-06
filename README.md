@@ -191,17 +191,17 @@ b. Using simple for loops.
 using namespace std;
 
 int main() {
-    int a1[], i, j;
+    int a1[4], i, j;
     float sum=0, avg;
-    for(i=0;i<;i++) {
+    for(i=0;i<4;i++) {
         cout<<"Enter element-"<<i+1<<": ";
         cin>>a1[i];
     }
-    for(j=0;j<;j++) {
+    for(j=0;j<4;j++) {
         sum = sum + a1[j];
     }
     cout<<"Sum of elements = "<<sum<<endl;
-    avg = sum/;
+    avg = sum/4;
     cout<<"Average = "<<avg;
 }
 
@@ -209,7 +209,8 @@ int main() {
 
 O/P:
 
-![image](https://github.com/user-attachments/assets/1ee17178-b01d-485c-82d6-3f9bece4b4e5)
+![image](https://github.com/user-attachments/assets/4bf9df0b-7abb-4565-9995-303db6245014)
+
 
 6) Maximum and Minimum element of an array.
 ```
