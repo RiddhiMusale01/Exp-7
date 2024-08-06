@@ -1,28 +1,17 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 int main() {
-    int size;
-
-    cout << "Enter the size of the array: ";
-    cin >> size;
-
-    int array[size];
-
-    cout << "Enter " << size << " elements:" << endl;
-    for (int i = 0; i < size; i++) {
-        cin >> array[i];
+    int a1[4], i, j;
+    float sum=0, avg;
+    for(i=0;i<4;i++) {
+        cout<<"Enter element-"<<i+1<<": ";
+        cin>>a1[i];
     }
-
-    int sum = 0;
-    for (int i = 0; i < size; i++) {
-        sum += array[i];
+    for(j=0;j<4;j++) {
+        sum = sum + a1[j];
     }
-
-    double average = static_cast<double>(sum) / size;
-
-    cout << "Sum of array elements: " << sum << endl;
-    cout << "Average of array elements: " << average << endl;
-
-    return 0;
+    cout<<"Sum of elements = "<<sum<<endl;
+    avg = sum/4;
+    cout<<"Average = "<<avg;
 }
