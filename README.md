@@ -1,12 +1,14 @@
 # Experiment 7
 
-AIM:
+# AIM:
 
 To study and implement C++ Arrays and Strings.
 
-SOFTARE: Visual Studio Code
+# SOFTARE: 
+Visual Studio Code
 
-THEORY:
+# THEORY:
+ARRAYS:
 
 Arrays in C++ are collections of elements of the same type stored in contiguous memory locations. They provide a way to group multiple values under a single variable name, which can be accessed using an index.
 
@@ -17,7 +19,12 @@ Elements of an array are accessed using indices, with the first element having a
 C++ supports multidimensional arrays, such as 2D arrays, declared with multiple sets of square brackets. For example, 
 int matrix[3][4]; declares a 3x4 matrix.
 
-CODES:
+STRINGS:
+
+A string refers to a sequence of characters.The #include <string> in C++ is used to include the standard library's string class, which provides a convenient and powerful way to work with text strings. Strings are essentially arrays of characters.
+Strings are used to store words and text. They are also used to store data, such as numbers and other types of information. Strings in C++ can also be defined using the std::string class.
+
+# CODES:
 
 1) Declaring Arrays
 
@@ -149,42 +156,6 @@ O/P:
 ![image](https://github.com/user-attachments/assets/3c4448a4-9ec5-4586-b14c-0dbbc92508e1)
 
 5) Sum and average of an array.
-   a. Using range-based for loops.
-
-```
-#include <iostream>
-using namespace std;
-
-int main() {
-    
-  double numbers[] = {5.5, 1.5, 5.6, 5.32, 9.43, 22.88};
-
-  double sum = 0.0;
-  double count = 0.0;
-  double average;
-
-  cout << "The numbers are: ";
-  for (const double n : numbers) {
-    cout << n << "  ";
-   
-    sum += n;
-    
-    ++count;
-  }
-
-  cout << "Sum = " << sum << endl;
-
-  average = sum / count;
-  cout << "Their Average = " << average << endl;
-  return 0;
-}
-```
-O/P:
-
-
-![image](https://github.com/user-attachments/assets/962248b3-9098-442f-925a-ece00a25e054)
-
-b. Using simple for loops.
 
 ```
 #include<iostream>
@@ -251,9 +222,106 @@ O/P:
 
 ![image](https://github.com/user-attachments/assets/eba21505-9465-4504-aa04-8dfb2c6cdd86)
 
-CONCLUSION:
+7)Printing string input:
 
-These code snippets show basic operations with arrays in C++. They include printing array elements, taking user input to fill arrays, reversing the order of elements, searching for specific values, and calculating sums and averages. The examples use different types of loops and handle both fixed and user-defined array sizes. Overall, they provide a straightforward introduction to working with arrays and performing common tasks like finding maximum and minimum values.
+```
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    string s;
+    cout<<"Enter a string:"<<endl;
+    cin>>s;
+    cout<<"Entered string is:"<<s<<endl;
+    return 0;
+    
+}
+```
+o/p:
+
+![image](https://github.com/user-attachments/assets/d07d5ec8-27a8-476f-a2d1-525258218958)
+
+8)Concatenation of Strings:
+```
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    string s,t;
+    cout<<"Enter first string:"<<endl;
+    cin>>s;
+    cout<<"Enter second string:"<<endl;
+    cin>>t;
+    cout<<"Concatenation of strings is:"<<s+t<<endl;
+    return 0;
+}
+```
+o/p;
+
+![image](https://github.com/user-attachments/assets/83d8af9d-5aa3-4eb0-8538-da39b7fb3ecd)
+
+9)Palindrome of string:
+```
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main() {
+    string a;
+    cout<<"Enter string:";
+    cin>>a;
+
+    int n = a.length();
+    int i;
+
+    for (i=0;i<n/2;i++) {
+        if (a[i]!=a[n-1-i]) {
+            break; 
+        }
+    }
+
+    if (i==n/2) {
+        cout<<"String is a palindrome."<<endl;
+    } else{
+        cout<<"String is not a palindrome."<< endl;
+    }
+
+    return 0;
+}
+```
+o/p:
+
+![image](https://github.com/user-attachments/assets/1b2dba09-e77b-4f50-a93c-f7e58a2d4707)
+
+10)Reversing string:
+
+```
+#include<iostream>
+#include<string>
+using namespace std;
+int main() {
+string a;
+cout<<"Enter string: ";
+cin>>a;
+int i;
+for(i=a.length()-1;i>=0;i--) {
+cout<<a[i];
+}
+return 0;
+}
+
+```
+o/p:
+
+![image](https://github.com/user-attachments/assets/051bd0c8-fc8c-43df-8c61-4a7977ca1d67)
+
+
+
+# CONCLUSION:
+
+These code snippets show basic operations with arrays in C++. They include printing array elements, taking user input to fill arrays, reversing the order of elements, searching for specific values, and calculating sums and averages. The examples use different types of loops and handle both fixed and user-defined array sizes. Overall, they provide a straightforward introduction to working with arrays and performing common tasks like finding maximum and minimum value.
+
+The last four C++ code demonstrate basic string operations: reading, displaying, concatenating, reversing, and checking for palindromes. Each program effectively handles single-word strings. Overall, they provide a solid foundation for understanding string manipulation in C++.
 
 
 
