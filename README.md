@@ -4,7 +4,7 @@
 
 To study and implement C++ Arrays and Strings.
 
-# SOFTARE: 
+# SOFTWARE: 
 Visual Studio Code
 
 # THEORY:
